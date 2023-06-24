@@ -3,7 +3,6 @@ import Header from "../Components/Header";
 import logoGithub from "../images/logoGithub.svg";
 import logoLinkedin from "../images/linkedin-icon.svg";
 import logoMail from "../images/mail.svg";
-import invader from "../images/spaceInvaders.svg";
 
 import logoHTML from "../images/logoTools/html-1.svg";
 import logoCSS from "../images/logoTools/css-3.svg";
@@ -61,6 +60,8 @@ const Home = () => {
             <p>I'm Lea, Fullstack developer</p>
             <p>Welcome to my portfolio</p>
           </div>
+        </div>
+        <div className="rightPresentationContainer">
           <div className="imgLinkContainer">
             <a
               href="https://github.com/LeaCastanet"
@@ -69,20 +70,19 @@ const Home = () => {
             >
               <img src={logoGithub} alt="gitHub" className="imgLink" />
             </a>
-            <a
-              href="https://www.linkedin.com/in/l%C3%A9a-castanet-458945253/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={logoLinkedin} alt="Linkedin" className="imgLink" />
-            </a>
-            <a href="mailto:lea.castanet@hotmail.com">
-              <img src={logoMail} alt="mail" className="imgLink" />
-            </a>
+            <div className="imgLinkBas">
+              <a
+                href="https://www.linkedin.com/in/l%C3%A9a-castanet-458945253/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={logoLinkedin} alt="Linkedin" className="imgLink" />
+              </a>
+              <a href="mailto:lea.castanet@hotmail.com">
+                <img src={logoMail} alt="mail" className="imgLink" />
+              </a>
+            </div>
           </div>
-        </div>
-        <div className="rightPresentationContainer">
-          <img src={invader} alt="invader" className="invader" />
         </div>
       </div>
       <div className="homeDown" ref={headerRef} style={{ opacity: opacity }}>

@@ -35,7 +35,7 @@ const Header = () => {
           </Link>
 
           <Link to="/contact" className="linkHeader">
-            <p className="buttonHeaderContact">Contact and Resume</p>
+            <p className="buttonHeader">Contact and Resume</p>
           </Link>
         </div>
       </div>

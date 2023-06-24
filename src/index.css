@@ -124,13 +124,8 @@ table {
 }
 
 @font-face {
-  font-family: "SFA";
-  src: local("SFA"),
-    url("./Fonts/TrueType/SFAlienEncounters-Italic.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "hemi";
-  src: local("hemi"),
-    url("./Fonts/hemi-head-426/hemi head bd it.ttf") format("truetype");
+  font-family: "tusker";
+  src: local("tusker"),
+    url("./Fonts/tusker-grotesk-font/TuskerGrotesk-2600Semibold.ttf")
+      format("truetype");
 }

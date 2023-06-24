@@ -59,20 +59,24 @@
 
 /* Header */
 
+.fullHeaderContainer {
+  top: 0;
+  width: 100%;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+}
+
 .headerContainer {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
   padding: 15px;
-}
-
-.name {
-  font-family: "SFA";
-  color: white;
+  font-family: "Roboto", sans-serif;
   font-size: 25px;
-  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
-    0 0 0.2em rgb(35, 223, 244);
+  color: #f5eee6;
 }
 
 .buttonContainer {
@@ -81,35 +85,19 @@
 }
 
 .buttonHeader {
-  font-family: "SFA";
-  font-size: 25px;
-  color: white;
   margin-right: 30px;
-  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
-    0 0 0.2em rgb(35, 223, 244);
-}
-
-.buttonHeaderContact {
-  font-family: "SFA";
-  font-size: 25px;
-  color: white;
-  margin-right: 30px;
-  width: 175px;
-  text-align: center;
-  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
-    0 0 0.2em rgb(35, 223, 244);
+  color: #f5eee6;
+  --thickness: 2px;
+  --strike: 0;
+  background: linear-gradient(90deg, transparent, currentColor 0) no-repeat
+    right center / calc(var(--strike) * 100%) var(--thickness);
+  transition: background-size 0.4s ease;
+  padding: 0 0.2em;
 }
 
 .buttonHeader:hover {
-  color: #e34a92;
-  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
-    0 0 0.2em rgb(35, 223, 244);
-}
-
-.buttonHeaderContact:hover {
-  color: #e34a92;
-  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
-    0 0 0.2em rgb(35, 223, 244);
+  --strike: 1; /* "1" means "true" (show the strike line) */
+  background-position-x: left;
 }
 
 .linkHeader {
@@ -121,7 +109,7 @@
 }
 
 .fontAwsomeIcon {
-  color: white;
+  color: #f5eee6;
   height: 0px;
   display: none;
 }
@@ -131,37 +119,46 @@
 .homeContainer {
   height: 100%;
   width: 100%;
-  background-image: url(/src/images/versaille.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(/src/images/versaille.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  font-family: "Roboto", sans-serif;
 }
 
 .presentationHomeContainer {
-  color: white;
+  color: #f5eee6;
   display: flex;
   align-items: center;
   justify-content: space-around;
   margin-top: 200px;
-  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
-    0 0 0.2em rgb(35, 223, 244);
 }
 
 .presentationText {
   font-size: 40px;
   margin-bottom: 20px;
-  font-family: "hemi";
 }
 
 .presentationTitle {
   font-size: 50px;
   margin-bottom: 20px;
-  font-family: "SFA";
+}
+
+.imgLinkContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .imgLink {
   height: 50px;
-  margin-right: 20px;
+  margin-right: 40px;
+}
+
+.imgLinkBas {
+  margin-top: 20px;
 }
 
 .invader {
@@ -175,10 +172,7 @@
 
 .mySkills {
   font-size: 50px;
-  font-family: "SFA";
-  color: white;
-  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
-    0 0 0.2em rgb(35, 223, 244);
+  color: #f5eee6;
   margin-top: 200px;
   display: flex;
   justify-content: center;
@@ -201,7 +195,6 @@
 
 .FSdescriptionContainer {
   flex: 2;
-  font-family: "hemi";
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -211,9 +204,7 @@
 .titleSkills {
   font-size: 40px;
   text-align: center;
-  color: white;
-  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
-    0 0 0.2em rgb(35, 223, 244);
+  color: #f5eee6;
   margin-bottom: 30px;
 }
 
@@ -231,9 +222,7 @@
 .textSkills {
   font-size: 20px;
   margin-bottom: 20px;
-  color: white;
-  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
-    0 0 0.2em rgb(35, 223, 244);
+  color: #f5eee6;
   text-align: center;
   margin-left: 10px;
   margin-right: 10px;
@@ -242,9 +231,7 @@
 .textSkillsLast {
   margin-bottom: 0px;
   font-size: 20px;
-  color: white;
-  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
-    0 0 0.2em rgb(35, 223, 244);
+  color: #f5eee6;
   text-align: center;
 }
 
@@ -257,7 +244,6 @@
 
 .cloudDescriptionContainer {
   flex: 2;
-  font-family: "hemi";
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -279,20 +265,22 @@
 .pagesContainer {
   height: 100%;
   width: 100%;
-  background-image: url(/src/images/etoiles2.jpg);
-  background-size: cover;
-  background-position: center;
+  font-family: "Roboto", sans-serif;
+  background-color: #131313;
 }
 
 .pagesContainerPetite {
   height: 100vh;
   width: 100%;
-  background-image: url(/src/images/etoiles2.jpg);
-  background-size: cover;
-  background-position: center;
+  font-family: "Roboto", sans-serif;
+  background-color: #131313;
 }
 
 /* Page Project  */
+
+.projectPageContainer {
+  font-family: "Roboto", sans-serif;
+}
 
 .projectTopContainer {
   display: flex;
@@ -303,20 +291,14 @@
 
 .projectTopTitle {
   font-size: 50px;
-  font-family: "SFA";
-  color: white;
-  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
-    0 0 0.2em rgb(35, 223, 244);
+  color: #f5eee6;
   margin-top: 100px;
   margin-bottom: 20px;
 }
 
 .projectTopText {
   font-size: 25px;
-  font-family: "hemi";
-  color: white;
-  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
-    0 0 0.2em rgb(35, 223, 244);
+  color: #f5eee6;
   text-align: center;
   max-width: 800px;
 }
@@ -369,7 +351,6 @@
 
 .projectDescriptionContainer {
   flex: 2;
-  font-family: "hemi";
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -380,36 +361,28 @@
 .projectTitle {
   font-size: 40px;
   text-align: center;
-  color: white;
-  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
-    0 0 0.2em rgb(35, 223, 244);
+  color: #f5eee6;
   margin-bottom: 30px;
 }
 
 .projectText {
   font-size: 20px;
   margin-bottom: 30px;
-  color: white;
-  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
-    0 0 0.2em rgb(35, 223, 244);
+  color: #f5eee6;
   text-align: center;
 }
 
 .projectLink {
   font-size: 20px;
   margin-bottom: 20px;
-  color: white;
-  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
-    0 0 0.2em rgb(35, 223, 244);
+  color: #f5eee6;
   text-align: center;
   text-decoration: none;
 }
 
 .projectLinkLast {
   font-size: 20px;
-  color: white;
-  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
-    0 0 0.2em rgb(35, 223, 244);
+  color: #f5eee6;
   text-align: center;
   text-decoration: none;
 }
@@ -436,7 +409,6 @@
   box-shadow: 0px 0px 65px rgb(35, 223, 244);
   border: rgb(35, 223, 244);
   border-radius: 5px;
-  font-family: "hemi";
   height: 50px;
   font-size: 20px;
   margin-bottom: 50px;
@@ -465,10 +437,7 @@
 
 .educationTopTitle {
   font-size: 50px;
-  font-family: "SFA";
-  color: white;
-  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
-    0 0 0.2em rgb(35, 223, 244);
+  color: #f5eee6;
   margin-top: 100px;
   margin-bottom: 20px;
   text-align: center;
@@ -476,10 +445,7 @@
 
 .educationTopText {
   font-size: 25px;
-  font-family: "hemi";
-  color: white;
-  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
-    0 0 0.2em rgb(35, 223, 244);
+  color: #f5eee6;
   text-align: center;
   max-width: 1200px;
   margin-left: 10px;
@@ -493,10 +459,7 @@
 
 .educationBottomTitle {
   font-size: 50px;
-  font-family: "SFA";
-  color: white;
-  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
-    0 0 0.2em rgb(35, 223, 244);
+  color: #f5eee6;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -522,7 +485,6 @@
   border: 5px solid #e34a92;
   box-shadow: 0px 0px 65px #e34a92;
   border-radius: 5px;
-  font-family: "hemi";
   flex: 3;
   margin-bottom: 50px;
 }
@@ -537,17 +499,13 @@
 
 .trainingTitle {
   font-size: 30px;
-  color: white;
-  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
-    0 0 0.2em rgb(35, 223, 244);
+  color: #f5eee6;
   margin-bottom: 20px;
 }
 
 .trainingSubTitle {
   font-size: 20px;
-  color: white;
-  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
-    0 0 0.2em rgb(35, 223, 244);
+  color: #f5eee6;
 }
 
 .trainingBottomContainer {
@@ -560,17 +518,13 @@
 
 .trainingText {
   font-size: 20px;
-  color: white;
-  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
-    0 0 0.2em rgb(35, 223, 244);
+  color: #f5eee6;
   margin-bottom: 20px;
 }
 
 .trainingTextLast {
   font-size: 20px;
-  color: white;
-  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
-    0 0 0.2em rgb(35, 223, 244);
+  color: #f5eee6;
 }
 
 .puce {
@@ -610,34 +564,26 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "hemi";
   justify-content: center;
   margin-left: 20px;
 }
 
 .contactTitle {
   font-size: 50px;
-  font-family: "SFA";
-  color: white;
-  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
-    0 0 0.2em rgb(35, 223, 244);
+  color: #f5eee6;
   margin-bottom: 30px;
 }
 
 .contactText {
   font-size: 25px;
-  color: white;
-  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
-    0 0 0.2em rgb(35, 223, 244);
+  color: #f5eee6;
   text-align: center;
   max-width: 600px;
 }
 
 .contactLink {
   font-size: 25px;
-  color: white;
-  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
-    0 0 0.2em rgb(35, 223, 244);
+  color: #f5eee6;
   text-decoration: none;
   margin-top: 30px;
 }
@@ -750,7 +696,7 @@
   }
 
   .fontAwsomeIcon {
-    color: white;
+    color: #f5eee6;
     height: 40px;
     display: initial;
     margin-right: 15px;
@@ -774,9 +720,7 @@
     height: 100%;
     text-align: left;
     background: none;
-    color: white;
-    text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
-      0 0 0.2em rgb(35, 223, 244);
+    color: #f5eee6;
     border: none;
     padding: 5px;
     margin: 0;
