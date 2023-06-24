@@ -16,10 +16,13 @@ import logoNetlify from "../images/logoTools/netlify.svg";
 import logoNorthFlank from "../images/logoTools/northFlank.png";
 
 import imgRetroWave1 from "../images/imgRetroWaveRetouché3.png";
-import imgRetroWave2 from "../images/imgRetroWaveRetouché2.png";
-
 import Fade from "react-reveal/Fade";
 import { useState, createRef, useEffect } from "react";
+
+import { Suspense } from "react";
+import { Canvas } from "@react-three/fiber";
+import { Environment } from "@react-three/drei";
+import Model from "../Components/Model";
 
 const headerRef = createRef();
 
@@ -92,11 +95,12 @@ const Home = () => {
         <div className="fullStackContainer">
           <Fade left>
             <div className="FSimgContainer">
-              <img
-                src={imgRetroWave2}
-                alt="RetroWave computer"
-                className="FSimg"
-              />
+              <Canvas>
+                <Suspense fallback={null}>
+                  <Model />
+                  <Environment preset="city" />
+                </Suspense>
+              </Canvas>
             </div>
           </Fade>
           <Fade right cascade>
