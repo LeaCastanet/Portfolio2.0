@@ -1,0 +1,1136 @@
+/* Loader */
+
+/* .preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  width: 150px;
+  height: 150px;
+  border: 5px solid #e34a92;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  position: relative;
+  animation: pulse 1s linear infinite;
+}
+.loader:after {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border: 5px solid rgb(35, 223, 244);
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: scaleUp 1s linear infinite;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+  60%,
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+@keyframes pulse {
+  0%,
+  60%,
+  100% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(1.2);
+  }
+} */
+
+/* Header */
+
+.headerContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.name {
+  font-family: "SFA";
+  color: white;
+  font-size: 25px;
+  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
+    0 0 0.2em rgb(35, 223, 244);
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: center;
+}
+
+.buttonHeader {
+  font-family: "SFA";
+  font-size: 25px;
+  color: white;
+  margin-right: 30px;
+  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
+    0 0 0.2em rgb(35, 223, 244);
+}
+
+.buttonHeaderContact {
+  font-family: "SFA";
+  font-size: 25px;
+  color: white;
+  margin-right: 30px;
+  width: 175px;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
+    0 0 0.2em rgb(35, 223, 244);
+}
+
+.buttonHeader:hover {
+  color: #e34a92;
+  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
+    0 0 0.2em rgb(35, 223, 244);
+}
+
+.buttonHeaderContact:hover {
+  color: #e34a92;
+  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
+    0 0 0.2em rgb(35, 223, 244);
+}
+
+.linkHeader {
+  text-decoration: none;
+}
+
+.menuContainer {
+  display: none;
+}
+
+.fontAwsomeIcon {
+  color: white;
+  height: 0px;
+  display: none;
+}
+
+/* Page Home */
+
+.homeContainer {
+  height: 100%;
+  width: 100%;
+  background-image: url(/src/images/versaille.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.presentationHomeContainer {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 200px;
+  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
+    0 0 0.2em rgb(35, 223, 244);
+}
+
+.presentationText {
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-family: "hemi";
+}
+
+.presentationTitle {
+  font-size: 50px;
+  margin-bottom: 20px;
+  font-family: "SFA";
+}
+
+.imgLink {
+  height: 50px;
+  margin-right: 20px;
+}
+
+.invader {
+  height: 200px;
+}
+
+.homeDown {
+  background: linear-gradient(0deg, #131313 80%, transparent);
+  padding-top: 100px;
+}
+
+.mySkills {
+  font-size: 50px;
+  font-family: "SFA";
+  color: white;
+  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
+    0 0 0.2em rgb(35, 223, 244);
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.fullStackContainer {
+  display: flex;
+}
+
+.FSimgContainer {
+  flex: 1.5;
+}
+
+.FSimg {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.FSdescriptionContainer {
+  flex: 2;
+  font-family: "hemi";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titleSkills {
+  font-size: 40px;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
+    0 0 0.2em rgb(35, 223, 244);
+  margin-bottom: 30px;
+}
+
+.logoSkillsContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.logoTools {
+  height: 50px;
+  margin-inline: 10px;
+}
+
+.textSkills {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: white;
+  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
+    0 0 0.2em rgb(35, 223, 244);
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.textSkillsLast {
+  margin-bottom: 0px;
+  font-size: 20px;
+  color: white;
+  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
+    0 0 0.2em rgb(35, 223, 244);
+  text-align: center;
+}
+
+.cloudContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 100px;
+  padding-bottom: 50px;
+}
+
+.cloudDescriptionContainer {
+  flex: 2;
+  font-family: "hemi";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cloudImgContainer {
+  flex: 1.5;
+}
+
+.cloudImg {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+/* Pages  */
+
+.pagesContainer {
+  height: 100%;
+  width: 100%;
+  background-image: url(/src/images/etoiles2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.pagesContainerPetite {
+  height: 100vh;
+  width: 100%;
+  background-image: url(/src/images/etoiles2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Page Project  */
+
+.projectTopContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.projectTopTitle {
+  font-size: 50px;
+  font-family: "SFA";
+  color: white;
+  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
+    0 0 0.2em rgb(35, 223, 244);
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+.projectTopText {
+  font-size: 25px;
+  font-family: "hemi";
+  color: white;
+  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
+    0 0 0.2em rgb(35, 223, 244);
+  text-align: center;
+  max-width: 800px;
+}
+
+.projectContainer {
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.projectContainerInvers {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 100px;
+}
+
+.projectContainerLast {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 50px;
+}
+
+.projectImgContainer {
+  flex: 3;
+  border: 5px solid #e34a92;
+  box-shadow: 0px 0px 65px #e34a92;
+  border-radius: 5px;
+}
+
+.projectImgContainerMotto {
+  flex: 3;
+  border: 5px solid #e34a92;
+  box-shadow: 0px 0px 65px #e34a92;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.projectImg {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.projectImgMotto {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.projectDescriptionContainer {
+  flex: 2;
+  font-family: "hemi";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.projectTitle {
+  font-size: 40px;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
+    0 0 0.2em rgb(35, 223, 244);
+  margin-bottom: 30px;
+}
+
+.projectText {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: white;
+  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
+    0 0 0.2em rgb(35, 223, 244);
+  text-align: center;
+}
+
+.projectLink {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: white;
+  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
+    0 0 0.2em rgb(35, 223, 244);
+  text-align: center;
+  text-decoration: none;
+}
+
+.projectLinkLast {
+  font-size: 20px;
+  color: white;
+  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
+    0 0 0.2em rgb(35, 223, 244);
+  text-align: center;
+  text-decoration: none;
+}
+
+.projectLink:hover {
+  color: #e34a92;
+  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
+    0 0 0.2em rgb(35, 223, 244);
+}
+
+.projectLinkLast:hover {
+  color: #e34a92;
+  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
+    0 0 0.2em rgb(35, 223, 244);
+}
+
+.buttonGitHubContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.buttonGitHub {
+  background-color: rgb(35, 223, 244);
+  box-shadow: 0px 0px 65px rgb(35, 223, 244);
+  border: rgb(35, 223, 244);
+  border-radius: 5px;
+  font-family: "hemi";
+  height: 50px;
+  font-size: 20px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.buttonGitHub:hover {
+  box-shadow: 0px 0px 65px #e34a92;
+  color: #e34a92;
+}
+
+.aButtonGitHub {
+  text-decoration: none;
+  color: white;
+  text-shadow: 1px 1px 2px #e34a92, 0 0 1em #e34a92, 0 0 0.2em #e34a92;
+}
+
+/* Page Education */
+
+.educationTopContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.educationTopTitle {
+  font-size: 50px;
+  font-family: "SFA";
+  color: white;
+  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
+    0 0 0.2em rgb(35, 223, 244);
+  margin-top: 100px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.educationTopText {
+  font-size: 25px;
+  font-family: "hemi";
+  color: white;
+  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
+    0 0 0.2em rgb(35, 223, 244);
+  text-align: center;
+  max-width: 1200px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.educationBottomContainer {
+  margin-top: 100px;
+  margin-right: 20px;
+}
+
+.educationBottomTitle {
+  font-size: 50px;
+  font-family: "SFA";
+  color: white;
+  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
+    0 0 0.2em rgb(35, 223, 244);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.educationContainer {
+  display: flex;
+  align-items: center;
+}
+
+.educationImgContainer {
+  height: 200px;
+  flex: 1;
+}
+
+.educationImg {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+
+.trainingContainer {
+  border: 5px solid #e34a92;
+  box-shadow: 0px 0px 65px #e34a92;
+  border-radius: 5px;
+  font-family: "hemi";
+  flex: 3;
+  margin-bottom: 50px;
+}
+
+.trainingTopContainer {
+  border-bottom: 5px solid #e34a92;
+  background-color: #e34a92;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.trainingTitle {
+  font-size: 30px;
+  color: white;
+  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
+    0 0 0.2em rgb(35, 223, 244);
+  margin-bottom: 20px;
+}
+
+.trainingSubTitle {
+  font-size: 20px;
+  color: white;
+  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
+    0 0 0.2em rgb(35, 223, 244);
+}
+
+.trainingBottomContainer {
+  padding: 20px;
+}
+
+.trainingTextContainer {
+  display: flex;
+}
+
+.trainingText {
+  font-size: 20px;
+  color: white;
+  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
+    0 0 0.2em rgb(35, 223, 244);
+  margin-bottom: 20px;
+}
+
+.trainingTextLast {
+  font-size: 20px;
+  color: white;
+  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
+    0 0 0.2em rgb(35, 223, 244);
+}
+
+.puce {
+  height: 20px;
+  margin-right: 10px;
+}
+
+/* Page Contact */
+
+.pageContactContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.contactImgContainer {
+  height: 500px;
+  width: 400px;
+  margin-top: 75px;
+  border: 5px solid #e34a92;
+  box-shadow: 0px 0px 65px #e34a92;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.contactImg {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.contactDescriptionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "hemi";
+  justify-content: center;
+  margin-left: 20px;
+}
+
+.contactTitle {
+  font-size: 50px;
+  font-family: "SFA";
+  color: white;
+  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
+    0 0 0.2em rgb(35, 223, 244);
+  margin-bottom: 30px;
+}
+
+.contactText {
+  font-size: 25px;
+  color: white;
+  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
+    0 0 0.2em rgb(35, 223, 244);
+  text-align: center;
+  max-width: 600px;
+}
+
+.contactLink {
+  font-size: 25px;
+  color: white;
+  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
+    0 0 0.2em rgb(35, 223, 244);
+  text-decoration: none;
+  margin-top: 30px;
+}
+
+.contactLink:hover {
+  color: #e34a92;
+  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
+    0 0 0.2em rgb(35, 223, 244);
+}
+
+/* Responsive */
+
+@media (max-width: 1155px) {
+  .mySkills {
+    margin-bottom: 75px;
+  }
+
+  .titleSkills {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .logoSkillsContainer {
+    margin-bottom: 20px;
+  }
+
+  .logoTools {
+    height: 30px;
+    margin-inline: 10px;
+  }
+
+  .textSkills {
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+
+  .textSkillsLast {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1057px) {
+  .projectContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+
+  .projectContainerInvers {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+
+  .projectContainerLast {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 965px) {
+  .trainingTitleContainer {
+    max-width: 250px;
+  }
+
+  .contactImgContainer {
+    height: 400px;
+    width: 300px;
+    margin-right: 10px;
+  }
+
+  .contactDescriptionContainer {
+    margin-left: 10px;
+  }
+
+  .contactTitle {
+    font-size: 40px;
+  }
+
+  .contactText {
+    font-size: 20px;
+  }
+
+  .contactLink {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 875px) {
+  .headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .buttonContainer {
+    display: none;
+  }
+
+  .menuContainer {
+    display: initial;
+    position: relative;
+  }
+
+  .fontAwsomeIconContainer {
+    background: none;
+    border: none;
+  }
+
+  .fontAwsomeIcon {
+    color: white;
+    height: 40px;
+    display: initial;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+
+  .menu {
+    position: absolute;
+    list-style-type: none;
+    padding: 0px;
+    width: 230px;
+  }
+
+  .menuItem {
+    margin: 0px;
+    background-color: #010101;
+  }
+
+  .menuButton {
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    background: none;
+    color: white;
+    text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
+      0 0 0.2em rgb(35, 223, 244);
+    border: none;
+    padding: 5px;
+    margin: 0;
+    cursor: pointer;
+    font-family: "hemi";
+    font-size: 20px;
+  }
+
+  .menuButton:hover {
+    color: #e34a92;
+    text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
+      0 0 0.2em rgb(35, 223, 244);
+  }
+
+  .fullHeaderContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .presentationHomeContainer {
+    margin-top: 150px;
+  }
+
+  .presentationText {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  .presentationTitle {
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+
+  .imgLink {
+    height: 40px;
+    margin-right: 20px;
+  }
+
+  .invader {
+    height: 150px;
+  }
+
+  .mySkills {
+    margin-bottom: 50px;
+    font-size: 40px;
+    margin-top: 150px;
+  }
+
+  .fullStackContainer {
+    display: flex;
+    align-items: center;
+  }
+
+  .FSimgContainer {
+    position: relative;
+    height: 300px;
+  }
+
+  .FSdescriptionContainer {
+    position: absolute;
+    align-items: center;
+  }
+
+  .cloudContainer {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+    padding-bottom: 25px;
+  }
+
+  .cloudDescriptionContainer {
+    position: absolute;
+    align-items: center;
+  }
+
+  .cloudImgContainer {
+    position: relative;
+    height: 300px;
+  }
+
+  .projectTopText {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 740px) {
+  .educationTopTitle {
+    font-size: 40px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+  }
+
+  .educationTopText {
+    font-size: 20px;
+    max-width: 700px;
+  }
+
+  .educationBottomTitle {
+    font-size: 40px;
+  }
+
+  .educationImgContainer {
+    height: 150px;
+  }
+
+  .trainingTopContainer {
+    padding: 15px;
+  }
+
+  .trainingTitleContainer {
+    max-width: 250px;
+  }
+
+  .trainingTitle {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  .trainingSubTitle {
+    font-size: 18px;
+  }
+
+  .trainingBottomContainer {
+    padding: 15px;
+  }
+
+  .trainingText {
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+
+  .trainingTextLast {
+    font-size: 15px;
+  }
+
+  .puce {
+    height: 15px;
+    margin-right: 10px;
+  }
+
+  .pageContactContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 50px;
+  }
+
+  .contactImgContainer {
+    height: 250px;
+    width: 200px;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 677px) {
+  .FSimgContainer {
+    height: 250px;
+  }
+
+  .cloudImgContainer {
+    height: 250px;
+  }
+
+  .presentationHomeContainer {
+    margin-top: 110px;
+  }
+
+  .presentationText {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  .presentationTitle {
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+
+  .imgLink {
+    height: 30px;
+    margin-right: 15px;
+  }
+
+  .invader {
+    height: 100px;
+  }
+
+  .mySkills {
+    margin-bottom: 30px;
+    font-size: 35px;
+    margin-top: 100px;
+  }
+
+  .menu {
+    position: absolute;
+    list-style-type: none;
+    padding: 0px;
+    width: 200px;
+  }
+
+  .menuButton {
+    font-size: 15px;
+  }
+
+  .educationBottomContainer {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .educationContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .educationImgContainer {
+    height: 150px;
+    flex: none;
+    margin-bottom: 20px;
+  }
+
+  .projectTopText {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 450px) {
+  .pagesContainerPetite {
+    height: 100%;
+    width: 100%;
+  }
+
+  .presentationHomeContainer {
+    color: white;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 50px;
+  }
+
+  .leftPresentationContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .presentationText {
+    text-align: center;
+  }
+
+  .imgLink {
+    height: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .invader {
+    height: 100px;
+    margin-bottom: 20px;
+  }
+
+  .mySkills {
+    margin-bottom: 30px;
+    margin-top: 75px;
+  }
+
+  .FSimgContainer {
+    height: 300px;
+  }
+
+  .cloudContainer {
+    margin-top: 75px;
+  }
+
+  .cloudImgContainer {
+    height: 300px;
+  }
+
+  .educationTopTitle {
+    font-size: 35px;
+    margin-top: 75px;
+  }
+
+  .educationBottomTitle {
+    font-size: 35px;
+  }
+
+  .educationTopText {
+    font-size: 18px;
+  }
+
+  .projectTopContainer {
+    margin-bottom: 75px;
+  }
+
+  .projectTopTitle {
+    font-size: 35px;
+    margin-top: 75px;
+  }
+
+  .projectTopText {
+    font-size: 20px;
+  }
+
+  .projectContainer {
+    display: flex;
+    margin-bottom: 75px;
+  }
+
+  .projectContainerInvers {
+    display: flex;
+    margin-bottom: 75px;
+  }
+
+  .projectContainerLast {
+    display: flex;
+  }
+
+  .projectTitle {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  .projectText {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .projectLink {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .projectLinkLast {
+    font-size: 18px;
+  }
+
+  .contactTitle {
+    font-size: 35px;
+    margin-top: 0px;
+  }
+
+  .contactText {
+    font-size: 20px;
+  }
+
+  .contactLink {
+    font-size: 20px;
+  }
+
+  .pageContactContainer {
+    height: 100vh;
+  }
+
+  .contactImgContainer {
+    margin-bottom: 30px;
+  }
+}
