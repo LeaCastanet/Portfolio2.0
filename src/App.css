@@ -936,12 +936,6 @@
     width: 100%;
   }
 
-  .leftPresentationContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
   .presentationText {
     text-align: center;
   }
@@ -951,12 +945,18 @@
     margin-top: 25px;
   }
 
-  .cloudContainer {
-    margin-top: 75px;
+  .FSimgContainer {
+    height: 300px;
+  }
+
+  .cloudDescriptionContainer {
+    position: relative;
+    align-items: center;
+    margin-bottom: 50px;
   }
 
   .cloudImgContainer {
-    height: 300px;
+    display: none;
   }
 
   .educationTopTitle {
