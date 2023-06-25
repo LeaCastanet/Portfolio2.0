@@ -15,7 +15,7 @@ import logoExpo from "../images/logoTools/expo-go-app.svg";
 import logoNetlify from "../images/logoTools/netlify.svg";
 import logoNorthflank from "../images/logoTools/northflankN.png";
 
-import { useState, createRef, useEffect } from "react";
+// import { useState, createRef, useEffect } from "react";
 import { Fade } from "react-reveal";
 
 import { Suspense } from "react";
@@ -23,34 +23,34 @@ import { Canvas } from "@react-three/fiber";
 import { Environment } from "@react-three/drei";
 import Model from "../Components/Model";
 
-const headerRef = createRef();
+// const headerRef = createRef();
 
 const Home = () => {
-  const [opacity, setOpacity] = useState(1);
+  // const [opacity, setOpacity] = useState(1);
 
-  useEffect(() => {
-    const headerHeight = headerRef.current.clientHeight;
-    const range = 200;
-    const offset = headerHeight / 1.5;
+  // useEffect(() => {
+  //   const headerHeight = headerRef.current.clientHeight;
+  //   const range = 200;
+  //   const offset = headerHeight / 1.5;
 
-    const didScrollPage = (e) => {
-      let calc = 1 + (window.scrollY - offset + range) / range;
+  //   const didScrollPage = (e) => {
+  //     let calc = 1 + (window.scrollY - offset + range) / range;
 
-      if (calc > 1) {
-        calc = 1;
-      } else if (calc < 0) {
-        calc = 0;
-      }
+  //     if (calc > 1) {
+  //       calc = 1;
+  //     } else if (calc < 0) {
+  //       calc = 0;
+  //     }
 
-      setOpacity(calc);
-    };
+  //     setOpacity(calc);
+  //   };
 
-    window.addEventListener("scroll", didScrollPage);
+  //   window.addEventListener("scroll", didScrollPage);
 
-    return () => {
-      window.removeEventListener("keydown", didScrollPage);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("keydown", didScrollPage);
+  //   };
+  // }, []);
 
   return (
     <div className="homeContainer">
@@ -87,7 +87,10 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="homeDown" ref={headerRef} style={{ opacity: opacity }}>
+      <div
+        className="homeDown"
+        // ref={headerRef} style={{ opacity: opacity }}
+      >
         <div className="mySkills">
           <p>My skills</p>
         </div>
