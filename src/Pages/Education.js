@@ -143,7 +143,7 @@ const Education = () => {
             </div>
           </Fade>
           <Fade right>
-            <div className="educationImgContainer">
+            <div className="educationImgContainerSagemcom">
               <a
                 href="https://www.sagemcom.com/fr"
                 target="_blank"

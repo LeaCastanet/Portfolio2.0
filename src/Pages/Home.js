@@ -15,7 +15,6 @@ import logoExpo from "../images/logoTools/expo-go-app.svg";
 import logoNetlify from "../images/logoTools/netlify.svg";
 import logoNorthFlank from "../images/logoTools/northFlank.png";
 
-import imgRetroWave1 from "../images/imgRetroWaveRetouché3.png";
 import { useState, createRef, useEffect } from "react";
 import { Fade } from "react-reveal";
 
