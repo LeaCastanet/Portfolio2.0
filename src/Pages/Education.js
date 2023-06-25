@@ -1,7 +1,7 @@
 import Header from "../Components/Header";
 
 import logoReacteur from "../images/LeReacteur.png";
-import invader from "../images/spaceInvaders2.svg";
+import star from "../images/star.svg";
 import Sagemcom from "../images/Sagemcom.png";
 
 import Fade from "react-reveal/Fade";
@@ -63,28 +63,28 @@ const Education = () => {
               </div>
               <div className="trainingBottomContainer">
                 <div className="trainingTextContainer">
-                  <img src={invader} alt="invader" className="puce" />
+                  <img src={star} alt="invader" className="puce" />
                   <p className="trainingText">
                     I've learn how to use HTML/CSS, JavaScript, React, React
                     Native, Node.Js, MongoDB.
                   </p>
                 </div>
                 <div className="trainingTextContainer">
-                  <img src={invader} alt="invader" className="puce" />
+                  <img src={star} alt="invader" className="puce" />
                   <p className="trainingText">
                     I've learn how to create API servers (Express, CRUD) and
                     host them with Northflank
                   </p>
                 </div>
                 <div className="trainingTextContainer">
-                  <img src={invader} alt="invader" className="puce" />
+                  <img src={star} alt="invader" className="puce" />
                   <p className="trainingText">
                     I've code every single day by completing various exercices
                     for backend, frontEnd, mobile app development, ...
                   </p>
                 </div>
                 <div className="trainingTextContainer">
-                  <img src={invader} alt="invader" className="puce" />
+                  <img src={star} alt="invader" className="puce" />
                   <p className="trainingTextLast">
                     I've the chance to creat in team my first MVP, MOTTO, from
                     backend to frontEnd.
@@ -95,9 +95,9 @@ const Education = () => {
           </Fade>
         </div>
       </div>
-      <div className="educationBottomContainer">
+      <div className="educationBottomContainerIntership">
         <p className="educationBottomTitle">Internship</p>
-        <div className="educationContainer">
+        <div className="educationContainerIntership">
           <Fade left>
             <div className="trainingContainer">
               <div className="trainingTopContainer">
@@ -113,31 +113,30 @@ const Education = () => {
               </div>
               <div className="trainingBottomContainer">
                 <div className="trainingTextContainer">
-                  <img src={invader} alt="invader" className="puce" />
+                  <img src={star} alt="invader" className="puce" />
                   <p className="trainingText">
-                    I've learn how to use HTML/CSS, JavaScript, React, React
-                    Native, Node.Js, MongoDB.
+                    Rethink and re-design the CMS’s (Cloud Monitoring System)
+                    interface.
                   </p>
                 </div>
                 <div className="trainingTextContainer">
-                  <img src={invader} alt="invader" className="puce" />
+                  <img src={star} alt="invader" className="puce" />
                   <p className="trainingText">
-                    I've learn how to create API servers (Express, CRUD) and
-                    host them with Northflank
+                    Create a Figma blueprint of the new interface.
                   </p>
                 </div>
                 <div className="trainingTextContainer">
-                  <img src={invader} alt="invader" className="puce" />
+                  <img src={star} alt="invader" className="puce" />
                   <p className="trainingText">
-                    I've code every single day by completing various exercices
-                    for backend, frontEnd, mobile app development, ...
+                    Re-model and modernise graphs with Apache ECharts to improve
+                    readability.
                   </p>
                 </div>
                 <div className="trainingTextContainer">
-                  <img src={invader} alt="invader" className="puce" />
+                  <img src={star} alt="invader" className="puce" />
                   <p className="trainingTextLast">
-                    I've the chance to creat in team my first MVP, MOTTO, from
-                    backend to frontEnd.
+                    Created a proof of concept for a mobile app CMS interface
+                    using React Native.
                   </p>
                 </div>
               </div>
@@ -150,7 +149,7 @@ const Education = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={Sagemcom} alt="Sagemcom" className="educationImg" />
+                <img src={Sagemcom} alt="Sagemcom" className="Sagemcom" />
               </a>
             </div>
           </Fade>

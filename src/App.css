@@ -288,6 +288,7 @@
 .projectPageContainer {
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
+  background: linear-gradient(0deg, #131313, transparent);
 }
 
 .projectTopContainer {
@@ -298,7 +299,8 @@
 }
 
 .projectTopTitle {
-  font-size: 50px;
+  font-size: 130px;
+  font-family: "tusker";
   color: #f5eee6;
   margin-top: 100px;
   margin-bottom: 20px;
@@ -330,17 +332,19 @@
 
 .projectImgContainer {
   flex: 3;
-  border: 5px solid #e34a92;
-  box-shadow: 0px 0px 65px #e34a92;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.24);
   border-radius: 5px;
 }
 
 .projectImgContainerMotto {
   flex: 3;
-  border: 5px solid #e34a92;
-  box-shadow: 0px 0px 65px #e34a92;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.24);
   border-radius: 5px;
-  background-color: white;
+  background: rgba(166, 166, 166, 0.27);
 }
 
 .projectImg {
@@ -444,7 +448,8 @@
 }
 
 .educationTopTitle {
-  font-size: 50px;
+  font-size: 130px;
+  font-family: "tusker";
   color: #f5eee6;
   margin-top: 100px;
   margin-bottom: 20px;
@@ -475,6 +480,11 @@
   margin-right: 20px;
 }
 
+.educationBottomContainerIntership {
+  margin-top: 100px;
+  margin-left: 20px;
+}
+
 .educationBottomTitle {
   font-size: 50px;
   color: #f5eee6;
@@ -483,6 +493,11 @@
 }
 
 .educationContainer {
+  display: flex;
+  align-items: center;
+}
+
+.educationContainerIntership {
   display: flex;
   align-items: center;
 }
@@ -497,6 +512,14 @@
   height: 100%;
   width: 100%;
   cursor: pointer;
+}
+
+.Sagemcom {
+  object-fit: contain;
+  height: 80%;
+  width: 80%;
+  cursor: pointer;
+  margin-left: 20px;
 }
 
 .trainingContainer {
@@ -955,6 +978,12 @@
   .educationContainer {
     display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+
+  .educationContainerIntership {
+    display: flex;
+    flex-direction: column-reverse;
     align-items: center;
   }
 
