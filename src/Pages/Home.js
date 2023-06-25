@@ -16,8 +16,8 @@ import logoNetlify from "../images/logoTools/netlify.svg";
 import logoNorthFlank from "../images/logoTools/northFlank.png";
 
 import imgRetroWave1 from "../images/imgRetroWaveRetouché3.png";
-import Fade from "react-reveal/Fade";
 import { useState, createRef, useEffect } from "react";
+import { Fade } from "react-reveal";
 
 import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
@@ -140,11 +140,7 @@ const Home = () => {
         <div className="cloudContainer">
           <Fade right>
             <div className="cloudImgContainer">
-              <img
-                src={imgRetroWave1}
-                alt="RetroWave data center"
-                className="cloudImg"
-              />
+              <div className="circle"></div>
             </div>
           </Fade>
           <Fade left cascade>
