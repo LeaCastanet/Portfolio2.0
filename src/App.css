@@ -1030,6 +1030,14 @@
     height: 100vh;
   }
 
+  .homeContainer {
+    height: 100vh;
+  }
+
+  .pagesContainer {
+    height: 100vh;
+  }
+
   .contactImgContainer {
     margin-bottom: 30px;
   }
