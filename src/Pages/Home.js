@@ -13,7 +13,7 @@ import logoForestAdmin from "../images/logoTools/forest.svg";
 import logoReact from "../images/logoTools/react-2.svg";
 import logoExpo from "../images/logoTools/expo-go-app.svg";
 import logoNetlify from "../images/logoTools/netlify.svg";
-import logoNorthFlank from "../images/logoTools/northFlank.png";
+import logoNorthflank from "../images/logoTools/northflankN.png";
 
 import { useState, createRef, useEffect } from "react";
 import { Fade } from "react-reveal";
@@ -147,7 +147,7 @@ const Home = () => {
               <p className="titleSkills">Cloud Infra-Architecture</p>
               <div className="logoSkillsContainer">
                 <img
-                  src={logoNorthFlank}
+                  src={logoNorthflank}
                   alt="NorthFlank"
                   className="logoTools"
                 />
