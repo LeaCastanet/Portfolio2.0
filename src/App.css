@@ -99,6 +99,7 @@
 .imgLink {
   height: 100px;
   margin-right: 40px;
+  margin-left: 40px;
 }
 
 .imgLinkBas {
@@ -926,6 +927,10 @@
 }
 
 @media (max-width: 450px) {
+  .homeContainer {
+    height: 100vh;
+  }
+
   .pagesContainerPetite {
     height: 100%;
     width: 100%;
