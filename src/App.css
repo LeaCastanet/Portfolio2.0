@@ -316,12 +316,14 @@
 .projectContainer {
   display: flex;
   margin-bottom: 100px;
+  align-items: center;
 }
 
 .projectContainerInvers {
   display: flex;
   flex-direction: row-reverse;
   margin-bottom: 100px;
+  align-items: center;
 }
 
 .projectContainerLast {
@@ -334,7 +336,7 @@
   flex: 3;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.24);
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .projectImgContainerMotto {
@@ -343,22 +345,23 @@
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.24);
-  border-radius: 5px;
+  border-radius: 10px;
   background: rgba(166, 166, 166, 0.27);
+  height: 100%;
 }
 
 .projectImg {
   object-fit: cover;
   height: 100%;
   width: 100%;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .projectImgMotto {
   object-fit: contain;
   height: 100%;
   width: 100%;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .projectDescriptionContainer {
@@ -390,6 +393,12 @@
   color: #f5eee6;
   text-align: center;
   text-decoration: none;
+  --thickness: 2px;
+  --strike: 0;
+  background: linear-gradient(90deg, transparent, currentColor 0) no-repeat
+    right center / calc(var(--strike) * 100%) var(--thickness);
+  transition: background-size 0.4s ease;
+  padding: 0 0.2em;
 }
 
 .projectLinkLast {
@@ -397,18 +406,22 @@
   color: #f5eee6;
   text-align: center;
   text-decoration: none;
+  --thickness: 2px;
+  --strike: 0;
+  background: linear-gradient(90deg, transparent, currentColor 0) no-repeat
+    right center / calc(var(--strike) * 100%) var(--thickness);
+  transition: background-size 0.4s ease;
+  padding: 0 0.2em;
 }
 
 .projectLink:hover {
-  color: #e34a92;
-  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
-    0 0 0.2em rgb(35, 223, 244);
+  --strike: 1; /* "1" means "true" (show the strike line) */
+  background-position-x: left;
 }
 
 .projectLinkLast:hover {
-  color: #e34a92;
-  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
-    0 0 0.2em rgb(35, 223, 244);
+  --strike: 1; /* "1" means "true" (show the strike line) */
+  background-position-x: left;
 }
 
 .buttonGitHubContainer {
@@ -417,11 +430,11 @@
 }
 
 .buttonGitHub {
-  background-color: rgb(35, 223, 244);
-  box-shadow: 0px 0px 65px rgb(35, 223, 244);
-  border: rgb(35, 223, 244);
-  border-radius: 5px;
+  background-color: transparent;
+  border: 1px solid #f5eee6;
+  border-radius: 50px;
   height: 50px;
+  padding: 0px 15px 0px 15px;
   font-size: 20px;
   margin-bottom: 50px;
   margin-top: 30px;
@@ -429,14 +442,16 @@
 }
 
 .buttonGitHub:hover {
-  box-shadow: 0px 0px 65px #e34a92;
-  color: #e34a92;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  background: rgba(166, 166, 166, 0.27);
 }
 
 .aButtonGitHub {
   text-decoration: none;
-  color: white;
-  text-shadow: 1px 1px 2px #e34a92, 0 0 1em #e34a92, 0 0 0.2em #e34a92;
+  color: #f5eee6;
 }
 
 /* Page Education */
@@ -586,15 +601,16 @@
   height: 80vh;
   margin-left: 20px;
   margin-right: 20px;
+  color: #f5eee6;
 }
 
 .contactImgContainer {
   height: 500px;
   width: 400px;
   margin-top: 75px;
-  border: 5px solid #e34a92;
-  box-shadow: 0px 0px 65px #e34a92;
-  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 10px;
   margin-right: 20px;
 }
 
@@ -602,7 +618,7 @@
   object-fit: cover;
   height: 100%;
   width: 100%;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .contactDescriptionContainer {
@@ -614,14 +630,13 @@
 }
 
 .contactTitle {
-  font-size: 50px;
-  color: #f5eee6;
+  font-size: 130px;
+  font-family: "tusker";
   margin-bottom: 30px;
 }
 
 .contactText {
   font-size: 25px;
-  color: #f5eee6;
   text-align: center;
   max-width: 600px;
 }
@@ -631,12 +646,17 @@
   color: #f5eee6;
   text-decoration: none;
   margin-top: 30px;
+  --thickness: 2px;
+  --strike: 0;
+  background: linear-gradient(90deg, transparent, currentColor 0) no-repeat
+    right center / calc(var(--strike) * 100%) var(--thickness);
+  transition: background-size 0.4s ease;
+  padding: 0 0.2em;
 }
 
 .contactLink:hover {
-  color: #e34a92;
-  text-shadow: 1px 1px 2px rgb(35, 223, 244), 0 0 1em rgb(35, 223, 244),
-    0 0 0.2em rgb(35, 223, 244);
+  --strike: 1; /* "1" means "true" (show the strike line) */
+  background-position-x: left;
 }
 
 /* Responsive */
